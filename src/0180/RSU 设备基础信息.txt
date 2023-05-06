@@ -1,0 +1,55 @@
+1
+rsuSn
+是
+String
+RSU的序列号
+2
+deviceType
+是
+Integer
+设备类型:0:RSCU ;1:RSU;2:摄像机;3:毫米波雷 达;4:激光雷达;5:信号控制机;6:其他设备......
+3
+version
+否
+String
+接口协议版本，字符串长度取值范围:1~128
+4
+latitude
+否
+Double
+经度
+5
+longitude
+否
+Double
+纬度
+6
+elevation
+否
+Double
+海拔:海拔和高程信息的使用应满足国家相关规定
+7
+crossId
+否
+String
+路口编号，可参考YD/T 3709中DE_NodeID
+8
+crossType
+否
+Integer
+路口类型:0:十字路口;1:T字路口;2:Y字路口;3: 环形路口;4:其他
+9
+crossName
+否
+String
+路口名称，可参考YD/T 3709中的Node name
+10
+linkName
+否
+String
+路段名称，可参考YD/T 3709中Link name
+11
+linkId
+否
+Integer
+路段编号，可参考YD/T 3709中DE_LinkID

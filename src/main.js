@@ -1,0 +1,1 @@
+console.log("请运行：gen_开头的文件")

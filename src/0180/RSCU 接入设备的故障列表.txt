@@ -1,0 +1,25 @@
+1
+deviceSn
+是
+String
+RSCU接入设备的序列号
+2
+deviceType
+是
+Integer
+设备类型:0:RSCU ;1:RSU;2:摄像机;3:毫米波雷 达;4:激光雷达;5:信号控制机;6:其他设备......
+3
+faultType
+否
+Integer
+故障类型:0:摄像机故障;1:毫米波雷达故障;3:激光 雷达故障;4:...
+4
+faultTime
+否
+Double
+故障时间，单位毫秒
+5
+faultDescription
+否
+String
+故障描述

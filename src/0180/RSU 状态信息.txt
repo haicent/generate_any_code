@@ -1,0 +1,20 @@
+1
+rsuSn
+是
+String
+RSU的序列号
+2
+deviceType
+是
+Integer
+设备类型:0:RSCU;1:RSU;2:摄像机;3:毫米波雷达; 4:激光雷达;5:信号控制机;6:其他设备......
+3
+status
+否
+Integer
+运行状态:0:正常;1:故障
+4
+active
+是
+Integer
+联网状态:0:在线;1:离线

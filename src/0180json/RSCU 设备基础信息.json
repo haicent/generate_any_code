@@ -1,0 +1,219 @@
+[
+  {
+    "id": "1",
+    "fieldName": "timeStamp",
+    "fieldRequired": "是",
+    "fieldType": "Long",
+    "fieldComment": "时间戳"
+  },
+  {
+    "id": "2",
+    "fieldName": "seqNum",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "会话唯一标识"
+  },
+  {
+    "id": "3",
+    "fieldName": "rscuSn",
+    "fieldRequired": "是",
+    "fieldType": "String",
+    "fieldComment": "RSCU的序列号，唯一编码"
+  },
+  {
+    "id": "4",
+    "fieldName": "regionId",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "根据中华人民共和国行政区划代码定义，包含省、市、 县，六位数字，取值应符合GB/T 2260的规定"
+  },
+  {
+    "id": "5",
+    "fieldName": "roadId",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "道路编号"
+  },
+  {
+    "id": "6",
+    "fieldName": "roadName",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "道路名称"
+  },
+  {
+    "id": "7",
+    "fieldName": "roadType",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "道路类型:0:高速公路;1:一级公路;2:二级公路; 3:三级公路;4:四级公路;5:城市快速路;6:城 市主干路;7:城市次干路;8:城市支路;9:其他"
+  },
+  {
+    "id": "8",
+    "fieldName": "crossId",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "路口编号，可参考YD/T 3709中DE_NodeID"
+  },
+  {
+    "id": "9",
+    "fieldName": "crossType",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "路口类型:0:十字路口;1:T字路口;2:Y字路口; 3:环形路口;4:其他"
+  },
+  {
+    "id": "10",
+    "fieldName": "crossName",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "路口名称，可参考YD/T 3709中的Node name"
+  },
+  {
+    "id": "11",
+    "fieldName": "linkId",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "路段编号，可参考YD/T 3709中DE_LinkID"
+  },
+  {
+    "id": "12",
+    "fieldName": "linkName",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "路段名称，可参考YD/T 3709中Link name"
+  },
+  {
+    "id": "13",
+    "fieldName": "latitude",
+    "fieldRequired": "否",
+    "fieldType": "Double",
+    "fieldComment": "经度"
+  },
+  {
+    "id": "14",
+    "fieldName": "longitude",
+    "fieldRequired": "否",
+    "fieldType": "Double",
+    "fieldComment": "纬度"
+  },
+  {
+    "id": "15",
+    "fieldName": "elevation",
+    "fieldRequired": "否",
+    "fieldType": "Double",
+    "fieldComment": "海拔:海拔和高程信息的使用应满足国家相关规定"
+  },
+  {
+    "id": "16",
+    "fieldName": "deviceType",
+    "fieldRequired": "是",
+    "fieldType": "Integer",
+    "fieldComment": "设备类型:0:RSCU ;1:RSU;2:摄像机;3:毫米波 雷达;4:激光雷达;5:信号控制机;6:其他设备......"
+  },
+  {
+    "id": "17",
+    "fieldName": "supplier",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "设备供应商:0:XX;1:XX;2:XX..."
+  },
+  {
+    "id": "18",
+    "fieldName": "owner",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "设备归属方:0:XX;1:XX;2:XX..."
+  },
+  {
+    "id": "19",
+    "fieldName": "protocolVersion",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "接口协议版本"
+  },
+  {
+    "id": "20",
+    "fieldName": "imei",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "IMEI"
+  },
+  {
+    "id": "21",
+    "fieldName": "iccId",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "集成电路卡识别码"
+  },
+  {
+    "id": "22",
+    "fieldName": "rscuStatus",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "设备运营状态:0:正常;1:故障"
+  },
+  {
+    "id": "23",
+    "fieldName": "active",
+    "fieldRequired": "是",
+    "fieldType": "Integer",
+    "fieldComment": "联网状态:0:在线;1:离线"
+  },
+  {
+    "id": "24",
+    "fieldName": "transProtocal",
+    "fieldRequired": "否",
+    "fieldType": "ENUMERATED",
+    "fieldComment": "接口协议:HTTP;HTTPS;FTP;SFTP;UDP;MQTT;other"
+  },
+  {
+    "id": "25",
+    "fieldName": "softwareVersion",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "版本号"
+  },
+  {
+    "id": "26",
+    "fieldName": "hardwareVersion",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "硬件版本号"
+  },
+  {
+    "id": "27",
+    "fieldName": "rsuNum",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "与RSCU连接的RSU数量"
+  },
+  {
+    "id": "28",
+    "fieldName": "rsulist",
+    "fieldRequired": "否",
+    "fieldType": "SEQUENCE",
+    "fieldComment": "接入RSU设备列表，接入RSU设备基础信息"
+  },
+  {
+    "id": "29",
+    "fieldName": "sensorNum",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "与RSCU连接的感知设备数量"
+  },
+  {
+    "id": "30",
+    "fieldName": "sensorlist",
+    "fieldRequired": "否",
+    "fieldType": "SEQUENCE",
+    "fieldComment": "接入感知设备列表，接入感知设备基础信息"
+  },
+  {
+    "id": "31",
+    "fieldName": "ack",
+    "fieldRequired": "否",
+    "fieldType": "Boolean",
+    "fieldComment": "是否需要确认，TRUE为需要，不带或FALSE为不需要"
+  }
+]

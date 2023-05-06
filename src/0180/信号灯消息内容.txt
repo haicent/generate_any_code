@@ -1,0 +1,80 @@
+1
+timeStamp
+是
+Long
+时间戳，数据产生时间，精确到毫秒级
+2
+rscuSn
+否
+String
+RSCU 的序列号
+3
+cityName
+是
+String
+城市名称
+4
+regionId
+是
+String
+行政区划代码，包含省、市、县级，6 位数字，取值应符 合 GB/T 2260 的规定
+5
+crossId
+是
+String
+路口编号，路口唯一代号,可参考 YD/T 3709 中 DE_NodeID
+6
+crossName
+否
+String
+路口名称，可参考 YD/T 3709 中的 Node name
+7
+longitude
+否
+Double
+经度，路口中心点经度，符合 GA/T 543.9 公安数据元 DE01119
+8
+latitude
+否
+Double
+纬度，路口中心点纬度，符合 GA/T 543.9 公安数据元 DE01120
+9
+elevation
+否
+Double
+海拔高度，在同一个经纬度有多层路口时应填写，单位为 米
+10
+status
+否
+Integer
+信号控制机运行状态信息，取值范围: 0:无效; 1:工作正常; 2:故障状态; 3:其他。
+11
+controlMode
+否
+Integer
+信号控制方式，取值范围: 1:黄闪控制; 2:多时段控制; 3:手动控制; 4:感应控制; 5:无电缆协调控制; 6:单点优化控制; 7:公交信号优先; 8:紧急事件优先; 9:其他。
+12
+number
+否
+Integer
+路口进口数量，信号灯控制路口的进口数量
+13
+direction
+否
+Integer
+进口方向，以地理正北方向为起点的顺时针旋转角度，单 位为度
+14
+confidence
+否
+Double
+置信度，1 代表 100 %可信，若遇到早晚高峰动态配时情 况，可降低置信度
+15
+Lamplist
+否
+SEQUENCE
+信号灯灯色和色步信息列表，包含 1 到 N(路口进口数量) 个进口灯色、色步等信息，单个进口灯色状态信息应符合 表23的规定
+16
+ack
+否
+Boolean
+是否需要确认，TRUE 为需要，不带或 FALSE 为不需要

@@ -1,0 +1,115 @@
+1
+eventId
+否
+Integer
+交通事件编号
+2
+eventType
+是
+Integer
+见 YD/T 3709 附录 A EVENTType 类型与取值
+3
+sourceType
+否
+Integer
+事件感知来源:0:未知来源;1:本 RSCU;2:RSU;3: video;4:激光雷达;5:毫米波雷达;6:微波雷达; 7:地磁线圈
+4
+crossId
+否
+String
+路口编号，可参考YD/T 3709中DE_NodeID
+5
+crossType
+否
+Integer
+路口类型:0:十字路口;1:T字路口;2:Y字路口;3: 环形路口;4:其他
+6
+crossName
+否
+String
+路口名称，可参考YD/T 3709中的Node name
+7
+linkName
+否
+String
+路段名称，可参考YD/T 3709中Link name
+8
+linkId
+否
+Integer
+路段编号，可参考YD/T 3709中DE_LinkID
+9
+laneId
+否
+Integer
+所在车道，可参考 YD/T 3709 中 DE_LaneID
+10
+startTime
+否
+Double
+事件发生时间
+11
+endTime
+否
+Double
+事件结束时间
+12
+longitude
+是
+Double
+事件位置:经度
+13
+latitude
+是
+Double
+事件位置:纬度
+14
+elevation
+否
+Double
+海拔:海拔和高程信息的使用应满足国家相关规定
+15
+polygonPoint
+否
+SEQUENCE
+长、宽、高的有序点序列
+16
+speed
+否
+Double
+速度
+17
+speedConfidence
+否
+ENUMERATED
+95 %置信水平车辆的速度置信度
+18
+heading
+否
+Double
+航向角
+19
+headingConfidence
+否
+ENUMERATED
+95 %置信水平车辆的航向角置信度
+20
+priority
+否
+String
+事件优先级
+21
+eventConfidence
+否
+ENUMERATED
+事件置信度
+22
+referenceLanes
+否
+String
+路段中指定的参考车道
+23
+ptcList
+否
+SEQUENCE
+交通事件涉及的交通参与者，数据内容见表15、表16

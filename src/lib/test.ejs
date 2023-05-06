@@ -1,0 +1,4 @@
+// 组装 <%=structName%> 数据
+<%=structName%>_t <%=structName%>;
+<%for (var i = 0; i < fields.length; i++) {  var f = fields[i];  %><%=structName%>.m_<%=f.fieldName%> = <%-f.testValue%>;
+<%}%>

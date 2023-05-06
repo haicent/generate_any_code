@@ -1,0 +1,165 @@
+1
+timestamp
+是
+Long
+时间戳
+2
+ptcType
+是
+Integer
+交通参与者类型:0:未知类型;1:机动车;2:非 机动车;3:行人;4:障碍物;5:其他
+3
+ptcId
+是
+Integer
+交通参与者编号，(0,65535)
+4
+vehicleClass
+否
+Integer
+车辆类型:0:未知类型;1:乘用车;2:卡车;3: 摩托车;4:运输车辆;5:紧急车辆;6:其他网联 车辆，可参考 YD/T 3709 中 DE_BasicVehicleClass
+5
+vehicleStatus
+否
+Integer
+车辆状态:0:正常状态:1:逆行车辆:2.超速车辆: 3.急刹车辆:4:僵尸车:5.其他车辆状态......
+6
+sourceType
+否
+Integer
+0:未知来源;1:RSCU;2:RSU;3:video;4:激 光雷达;5:毫米波雷达;6:微波雷达;7:地磁线圈; 8:其他
+7
+crossId
+否
+String
+路口编号，可参考YD/T 3709中DE_NodeID
+8
+crossType
+否
+Integer
+路口类型:0:十字路口;1:T字路口;2:Y字路口; 3:环形路口;4:其他
+9
+crossName
+否
+String
+路口名称，可参考YD/T 3709中的Node name
+10
+linkName
+否
+String
+路段名称，可参考 YD/T 3709 中 Link name
+11
+linkId
+否
+Integer
+路段编号，可参考 YD/T 3709 中 DE_LinkID
+12
+laneId
+否
+Integer
+所在车道，可参考 YD/T 3709 中 DE_LaneID
+13
+longitude
+是
+Double
+经度
+14
+latitude
+是
+Double
+纬度
+15
+elevation
+否
+Double
+海拔:海拔和高程信息的使用应满足国家相关规 定
+16
+positionConfidence
+否
+ENUMERATED
+95 %置信水平车辆的位置置信度
+17
+status
+否
+Integer
+交通参与者状态:1:静止;2:运动
+18
+speed
+否
+Double
+速度
+19
+speedConfidence
+否
+ENUMERATED
+95 %置信水平车辆的速度置信度
+20
+heading
+否
+Double
+航向角
+21
+headingConfidence
+否
+ENUMERATED
+95 %置信水平车辆的航向角置信度
+22
+acceleration
+否
+Double
+4 轴加速度
+23
+accelerationConfidence
+否
+ENUMERATED
+95 %置信水平车辆的加速度置信度
+24
+length
+否
+Double
+长，单位米
+25
+width
+否
+Double
+宽，单位米
+26
+height
+否
+Double
+高，单位米
+27
+polygonPoint
+否
+SEQUENCE
+长、宽和高的有序点序列
+28
+tracking
+否
+Integer
+目标物跟踪时长，(1..65535)
+29
+pathHistory
+否
+SEQUENCE
+目标物历史轨迹，同 T/ITS 0135 DF_PathHistory
+30
+pathPlanning
+否
+SEQUENCE
+目标物轨迹预测，同 T/ITS 0135 DF_PathPlanning
+31
+colour
+否
+String
+颜色
+32
+license
+否
+String
+车辆号牌，满足 GA 36 标准要求
+33
+brand
+否
+String
+车辆品牌

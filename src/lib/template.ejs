@@ -1,0 +1,26 @@
+/*
+ * <%- structComment %>_t
+ */
+struct <%- structName%>_t
+{
+    <%- structName%>_t() {}
+
+    <%- structName%>_t(
+        <%for (var i = 0; i < fields.length; i++) {  var f = fields[i];  %><%= f.fieldRequired %>
+        <%= f.fieldComment %>
+        <%- f.fieldType %> <%= f.fieldName %><% if (i < fields.length -1) { %>,<% } %>
+        <%}%>) : <%for (var i = 0; i < fields.length; i++) {  var f = fields[i];  %>m_<%= f.fieldName %>{<%if (f.fieldType == 'std::string'){%>std::move(<%= f.fieldName %>)<%}else{%><%= f.fieldName %><%}%>}<% if (i < fields.length -1) { %>,<% } %> <%}%>
+    {
+    }
+    <%for (var i = 0; i < fields.length; i++) {  var f = fields[i];  %>
+    <%= f.fieldRequired %>
+    <%= f.fieldComment %>
+    <%- f.fieldType %> m_<%= f.fieldName %>;
+    <%}%>
+    
+    template <typename Json_Io>
+    void json_io(Json_Io &io)
+    {
+        io<%for (var i = 0; i < fields.length; i++) {  var f = fields[i];  %> & json_dto::mandatory("<%= f.fieldName %>", m_<%= f.fieldName %>) <%}%>;
+    }
+};

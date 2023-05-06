@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "fieldName": "sensorSn",
+    "fieldRequired": "是",
+    "fieldType": "String",
+    "fieldComment": "感知设备的序列号"
+  },
+  {
+    "id": "2",
+    "fieldName": "deviceType",
+    "fieldRequired": "是",
+    "fieldType": "Integer",
+    "fieldComment": "设备类型:0:RSCU ;1:RSU;2:摄像机;3:毫米波雷 达;4:激光雷达;5:信号控制机;6:其他设备......"
+  },
+  {
+    "id": "3",
+    "fieldName": "latitude",
+    "fieldRequired": "否",
+    "fieldType": "Double",
+    "fieldComment": "经度"
+  },
+  {
+    "id": "4",
+    "fieldName": "longitude",
+    "fieldRequired": "否",
+    "fieldType": "Double",
+    "fieldComment": "纬度"
+  },
+  {
+    "id": "5",
+    "fieldName": "elevation",
+    "fieldRequired": "否",
+    "fieldType": "Double",
+    "fieldComment": "海拔:海拔和高程信息的使用应满足国家相关规定"
+  },
+  {
+    "id": "6",
+    "fieldName": "crossId",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "路口编号，可参考YD/T 3709中DE_NodeID"
+  },
+  {
+    "id": "7",
+    "fieldName": "crossType",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "路口类型:0:十字路口;1:T字路口;2:Y字路口;3: 环形路口;4:其他"
+  },
+  {
+    "id": "8",
+    "fieldName": "crossName",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "路口名称，可参考YD/T 3709中的Node name"
+  },
+  {
+    "id": "9",
+    "fieldName": "linkName",
+    "fieldRequired": "否",
+    "fieldType": "String",
+    "fieldComment": "路段名称，可参考YD/T 3709中Link name"
+  },
+  {
+    "id": "10",
+    "fieldName": "linkId",
+    "fieldRequired": "否",
+    "fieldType": "Integer",
+    "fieldComment": "路段编号，可参考YD/T 3709中DE_LinkID"
+  }
+]
